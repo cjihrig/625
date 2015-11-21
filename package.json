@@ -1,6 +1,6 @@
 {
   "name": "625",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel 6 convenience wrapper",
   "author": "Continuation Labs <contact@continuation.io> (http://continuation.io/)",
   "main": "bin/625.js",

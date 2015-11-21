@@ -2,7 +2,9 @@
 'use strict';
 var ChildProcess = require('child_process');
 var Path = require('path');
-var cmd = Path.join(__dirname, '..', 'node_modules', '.bin', 'babel');
+var location = require.resolve('babel-cli/package.json');
+var pkg = require(location);
+var cmd = Path.resolve(Path.dirname(location), pkg.bin.babel);
 var args = process.argv.slice(2);
 var options = {
   cwd: process.cwd(),
